@@ -3,7 +3,9 @@ import Data from '../Data'
 import Posts from './Posts'
 
 function Blogs() {
+  
     console.log(Data)
+
   return (
     <div className="card-info">
         { Data.map( data => {

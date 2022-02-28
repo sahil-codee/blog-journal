@@ -1,11 +1,13 @@
 import React from 'react'
 
 function Posts(props) {
+
     console.log(props)
+
   return (
     <div className='card'>
       <img className='card-img' src={props.data.imageUrl} alt="image" />
-        <img className='card-path' src={'/images/path.png'} alt="" />
+        <img className='card-path' src={process.env.PUBLIC_URL + "/images/path.png"} alt="Path" />
         <p className='card-location'>{props.data.location}</p>
         <a className='card-link' href={props.data.googleMapsUrl}>view on Google maps</a>
         <h2 className='card-title'>{props.data.title}</h2>
